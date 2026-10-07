@@ -27,14 +27,22 @@
         <div id="home" class="container active">
             <h1>sum game</h1>
             <p>bum</p>
-            <button class="srt-btn" onclick="alert('haha u thought i could coda a game so quickly')">play</button>
+            <button class="srt-btn" onclick="loadGame">play</button>
         </div>
 
-        <div id="home" class="container">
+        <div id="game-view" class="container">
             <h2>budget flappy bird</h2>
     </div>
     <script>
-    
+        window.addEventListener('keydown', (space) => {
+        });
+
+        function loadGame {
+            showView('game-view'); activeG = id; const config = grammar[id];
+        }
+        function goHome {
+            showView('home-view'); activeG = id; const config = grammar[id];
+        }
     </script>
 </body>
 </html>
