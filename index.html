@@ -16,6 +16,9 @@
         .main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; z-index: 1; }
         .container { background: var(--card); padding: 2rem; border-radius: 15px; width: 100%; max-width: 800px; text-align: center; border: 1px solid var(--border); display: none; max-height: 85vh; overflow-y: auto;}
         .container.active { display: block; }
+
+        .srt-btn { background: #1c1f26; border: 1px solid var(--border); color: var(--text); text-align: center; padding: 8px; border-radius: 6px; cursor: pointer; font-size: 0.8rem; width: 95%; transition: 0.2s; }
+        .srt-btn:hover { border-color: var(--accent); color: var(--accent); }
     </style>
 </head>
 
@@ -24,7 +27,7 @@
         <div class="container active">
             <h1>sum game</h1>
             <p>bum</p>
-            <button onclick="alert('haha u thought i could coda a game so quickly')">play</button>
+            <button class="nav-btn" onclick="alert('haha u thought i could coda a game so quickly')">play</button>
         </div>
     </div>
     <script>
