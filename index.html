@@ -24,10 +24,10 @@
 
 <body>
     <div class="main">
-        <div id="home" class="container active">
+        <div id="home-view" class="container active">
             <h1>sum game</h1>
             <p>bum</p>
-            <button class="srt-btn" onclick="loadGame">play</button>
+            <button class="srt-btn" onclick="loadGame()">play</button>
         </div>
 
         <div id="game-view" class="container">
@@ -37,11 +37,16 @@
         window.addEventListener('keydown', (space) => {
         });
 
-        function loadGame {
-            showView('game-view'); activeG = id; const config = grammar[id];
+        function showView(viewId) {
+            document.querySelectorAll('.container').forEach(el => el.classList.remove('active'));
+            document.getElementById(viewId).classList.add('active');
         }
-        function goHome {
-            showView('home-view'); activeG = id; const config = grammar[id];
+        
+        function loadGame() {
+            showView('game-view');
+        }
+        function goHome() {
+            showView('home-view');
         }
     </script>
 </body>
